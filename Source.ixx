@@ -1,4 +1,4 @@
-#include "VanityUI.h"
+import VanityUI;
 #include <iostream>
 
 int main(int argc, char* argv[])
@@ -83,7 +83,7 @@ int main(int argc, char* argv[])
     auto knappForTest = Vanity::CreateButton("Knapp for testing");
 
     p->AddElement(div6); 
-    div6->AddChild(knappForTest);
+    div6->AddChild(knappForTest)->AddChild(b);
 
     p->AddElement(autoLayoutBtn3); 
     p->AddElement(chk2); 
@@ -111,7 +111,8 @@ int main(int argc, char* argv[])
 
         if (b->Clicked()) {
             std::cout << "Button pressed!" << std::endl;
-            Vanity::DisplayPage(p2); 
+            //Vanity::DisplayPage(p2); 
+            b->SetLabel("Changed a lot");
         }
 
         if (btn1->Clicked()) {
@@ -119,6 +120,10 @@ int main(int argc, char* argv[])
             std::cout << "Button clicked" << std::endl; 
             //btn1->GetParent()->AlignElementsRight();
             //btn1->HorizontallyAlignCenter(); 
+        }
+
+        if (btn->Clicked()) {
+            Vanity::DisplayPage(p);
         }
 
         if (btnGiveFocus->Clicked()) {

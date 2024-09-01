@@ -13,60 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Elements">
-      <UniqueIdentifier>{7f562dab-f0b5-4161-9b44-686162cdd08e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Page">
-      <UniqueIdentifier>{4d2fa067-5d2e-4867-a481-8e8f801c774d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Vanity">
-      <UniqueIdentifier>{ba29c980-0392-48d4-aa68-a9c9f8e6d91a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Elements">
-      <UniqueIdentifier>{9d414ce7-7c54-437f-9d4e-4c28fe4c37ad}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Page">
-      <UniqueIdentifier>{972db60b-c69a-46d5-924f-d7219a3635eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Vanity">
-      <UniqueIdentifier>{c8e8e087-e463-428e-9b73-b9e84421b55f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Utility">
-      <UniqueIdentifier>{d9638f6f-177e-4ae8-8b6c-1807a81288ff}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Elements.h">
-      <Filter>Header Files\Elements</Filter>
+    <ClInclude Include="Elements.ixx">
+      <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Page.h">
-      <Filter>Header Files\Page</Filter>
-    </ClInclude>
-    <ClInclude Include="VanityUI.h">
-      <Filter>Header Files\Vanity</Filter>
-    </ClInclude>
-    <ClInclude Include="Utility.h">
-      <Filter>Source Files\Utility</Filter>
+    <ClInclude Include="Page.ixx">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Elements.cpp">
-      <Filter>Source Files\Elements</Filter>
+    <ClCompile Include="Utility.ixx">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Page.cpp">
-      <Filter>Source Files\Page</Filter>
-    </ClCompile>
-    <ClCompile Include="VanityUI.cpp">
-      <Filter>Source Files\Vanity</Filter>
-    </ClCompile>
-    <ClCompile Include="Utility.cpp">
-      <Filter>Source Files\Utility</Filter>
+    <ClCompile Include="VanityUI.ixx">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
